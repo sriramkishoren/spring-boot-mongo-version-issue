@@ -1,0 +1,5 @@
+org/example/entity/Documents.class
+org/example/entity/DocumentsRepository.class
+org/example/controller/DocumentsController.class
+org/example/Application.class
+org/example/configs/MongoConfig.class
