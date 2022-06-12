@@ -26,7 +26,7 @@ public class DocumentsController {
 
     @PostMapping("")
     public ResponseEntity<Documents> createDocument(@RequestBody Documents documentsRequest) {
-        Documents _document = documentsRepository.save(new Documents(documentsRequest.getTitle(), documentsRequest.getDescription()));
+        Documents _document = documentsRepository.insert(new Documents(documentsRequest.getTitle(), documentsRequest.getDescription()));
         return new ResponseEntity<>(_document, HttpStatus.CREATED);
     }
 
